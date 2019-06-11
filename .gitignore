@@ -1,6 +1,7 @@
 # Einstellungen von Idea IntelliJ
 *.iml
 .idea/
+.idea/**/*
 
 # Eclipse-Einstellungen
 .metadata
