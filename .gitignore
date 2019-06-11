@@ -1,13 +1,34 @@
-node_modules/
-.DS_Store
-*.png
-out/
-tmp/
+# Einstellungen von Idea IntelliJ
+*.iml
+.idea/
+
+# Eclipse-Einstellungen
+.metadata
+.settings/
+.settings/**/*
+
+# Ergebnisse der Maven Ausführung nicht ins git
+target/
+overlays/
+overlays/**/*
+
+# Log-Dateien
 *.log
-logs/
-charts/
-test.js
 
-/style.css
+# dev Dateien
+/src/dev/**/*
 
-/phantom/style.css
+# Betriebssystem-Müll
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+/lib/
+/login.txt
+
+# Node-Modules
+node_modules/
