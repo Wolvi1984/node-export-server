@@ -1,10 +1,6 @@
 'use strict';
 
 Highcharts.setOptions({
-    time: {
-        useUTC: false,
-        timezoneOffset: -120
-    },
     legend: {
         enabled: false
     },
@@ -73,12 +69,15 @@ Highcharts.setOptions({
             color: "#fff",
             regressionSettings: {
                 hideInLegend: true,
-                dashStyle: "solid"
+                dashStyle: "solid",
+                color: "#F1582D"
             }
         },
         column: {
-            borderWidth: 0,
-            borderRadius: 3
+            borderRadius: 3,
+            pointPadding: 0,
+            groupPadding: 0,
+            pointPlacement: 'between'
         },
         columnrange: {
             grouping: false,
@@ -89,6 +88,11 @@ Highcharts.setOptions({
         boxplot: {
             doQuartiles: false,
             stickyTracking: false
+        },
+        histogram: {
+            pointPadding: 0,
+            groupPadding: 0,
+            pointPlacement: 'between'
         },
         xrange: {
             borderWidth: 0,
